@@ -98,12 +98,10 @@ namespace Hillmons
 			{
 				if (basePlayer.DevController is NoclipController)
 				{
-					Log.Info("Noclip Mode Off");
 					basePlayer.DevController = null;
 				}
 				else
 				{
-					Log.Info("Noclip Mode On");
 					basePlayer.DevController = new NoclipController();
 				}
 			}

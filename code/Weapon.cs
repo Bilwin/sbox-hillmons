@@ -42,12 +42,12 @@ public partial class Weapon : BaseWeapon, IUse
 		if ( IsReloading )
 			return;
 
-		TimeSinceReload = 0;
-		IsReloading = true;
+		//TimeSinceReload = 0;
+		//IsReloading = true;
 
-		(Owner as AnimEntity)?.SetAnimBool( "b_reload", true );
+		//(Owner as AnimEntity)?.SetAnimBool( "b_reload", true );
 
-		StartReloadEffects();
+		//StartReloadEffects();
 	}
 
 	public override void Simulate( Client owner )
