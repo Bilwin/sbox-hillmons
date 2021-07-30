@@ -9,7 +9,7 @@ namespace Hillmons
 	[Library("hillmons")]
 	public partial class Hillmons : Sandbox.Game
 	{
-		public HillmonsKernel()
+		public Hillmons()
 		{
 			if (IsServer)
 			{
