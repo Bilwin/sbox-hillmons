@@ -14,13 +14,7 @@ namespace Hillmons
 		{
 			if ( IsServer )
 			{
-				Log.Info( "My Gamemode Has Created Serverside!" );
 				new HillmonsHudEntity();
-			}
-
-			if ( IsClient )
-			{
-				Log.Info( "My Gamemode Has Created Clientside!" );
 			}
 		}
 
