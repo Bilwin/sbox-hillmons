@@ -5,12 +5,12 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Alium.Hillmons
+namespace Hillmons
 {
 	[Library( "hillmons" )]
 	public partial class Hillmons : Sandbox.Game
 	{
-		public Kernel()
+		public Hillmons()
 		{
 			if ( IsServer )
 			{
