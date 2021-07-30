@@ -504,7 +504,7 @@ public partial class CarEntity : Prop, IUse
 		if ( !body.IsValid() )
 			return;
 
-		if ( other is SandboxPlayer player && player.Vehicle == null )
+		if ( other is HillmonsPlayer player && player.Vehicle == null )
 		{
 			var speed = body.Velocity.Length;
 			var forceOrigin = Position + Rotation.Down * Rand.Float( 20, 30 );
