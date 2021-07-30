@@ -11,6 +11,17 @@ Health {
 	align-items: center;
 }
 
+text.title {
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	text-shadow: 4px 4px 10px rgba( black, 0.3 );
+}
+
 CurrentTool
 {
 	position: absolute;

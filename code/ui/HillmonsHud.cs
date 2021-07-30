@@ -10,6 +10,7 @@ public partial class HillmonsHud : HudEntity<RootPanel>
 			return;
 
 		RootPanel.StyleSheet.Load( "/ui/HillmonsHud.scss" );
+		RootPanel.SetTemplate("/ui/HillmonsHud.html");
 
 		RootPanel.AddChild<NameTags>();
 		RootPanel.AddChild<CrosshairCanvas>();
