@@ -169,7 +169,7 @@ public partial class CarEntity : Prop, IUse
 	{
 		base.OnDestroy();
 
-		if ( driver is SandboxPlayer player )
+		if ( driver is HillmonsPlayer player )
 		{
 			RemoveDriver( player );
 		}
@@ -183,7 +183,7 @@ public partial class CarEntity : Prop, IUse
 	[Event.Tick.Server]
 	protected void Tick()
 	{
-		if ( driver is SandboxPlayer player )
+		if ( driver is HillmonsPlayer player )
 		{
 			if ( player.LifeState != LifeState.Alive || player.Vehicle != this )
 			{
@@ -203,7 +203,7 @@ public partial class CarEntity : Prop, IUse
 
 			if ( Input.Pressed( InputButton.Use ) )
 			{
-				if ( owner.Pawn is SandboxPlayer player && !player.IsUseDisabled() )
+				if ( owner.Pawn is HillmonsPlayer player && !player.IsUseDisabled() )
 				{
 					RemoveDriver( player );
 
@@ -448,7 +448,7 @@ public partial class CarEntity : Prop, IUse
 		wheel3.LocalRotation = wheelRotBackLeft;
 	}
 
-	private void RemoveDriver( SandboxPlayer player )
+	private void RemoveDriver( HillmonsPlayer player )
 	{
 		driver = null;
 		player.Vehicle = null;
@@ -466,7 +466,7 @@ public partial class CarEntity : Prop, IUse
 
 	public bool OnUse( Entity user )
 	{
-		if ( user is SandboxPlayer player && player.Vehicle == null && timeSinceDriverLeft > 1.0f )
+		if ( user is HillmonsPlayer player && player.Vehicle == null && timeSinceDriverLeft > 1.0f )
 		{
 			player.Vehicle = this;
 			player.VehicleController = new CarController();
@@ -529,7 +529,7 @@ public partial class CarEntity : Prop, IUse
 		if ( !IsServer )
 			return;
 
-		if ( eventData.Entity is SandboxPlayer player && player.Vehicle != null )
+		if ( eventData.Entity is HillmonsPlayer player && player.Vehicle != null )
 		{
 			return;
 		}

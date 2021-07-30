@@ -7,7 +7,6 @@ partial class Hillmons : Game
 	{
 		if ( IsServer )
 		{
-			// Create the HUD
 			_ = new HillmonsHud();
 		}
 	}
