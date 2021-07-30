@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace Alium.Hillmons
+namespace Hillmons
 {
 	partial class HillmonsPlayer : Player
 	{

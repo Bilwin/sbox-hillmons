@@ -1,6 +1,6 @@
 ﻿using Sandbox.UI;
 
-namespace Alium.Hillmons
+namespace Hillmons
 {
 	public partial class HillmonsHudEntity : Sandbox.HudEntity<RootPanel>
 	{
