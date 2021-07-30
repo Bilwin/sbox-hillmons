@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-partial class SandboxPlayer : Player
+partial class HillmonsPlayer : Player
 {
 	private TimeSince timeSinceDropped;
 	private TimeSince timeSinceJumpReleased;
@@ -15,7 +15,7 @@ partial class SandboxPlayer : Player
 
 	public ICamera LastCamera { get; set; }
 
-	public SandboxPlayer()
+	public HillmonsPlayer()
 	{
 		Inventory = new Inventory( this );
 	}
@@ -226,15 +226,4 @@ partial class SandboxPlayer : Player
 			break;
 		}
 	}
-
-	// TODO
-
-	//public override bool HasPermission( string mode )
-	//{
-	//	if ( mode == "noclip" ) return true;
-	//	if ( mode == "devcam" ) return true;
-	//	if ( mode == "suicide" ) return true;
-	//
-	//	return base.HasPermission( mode );
-	//	}
 }

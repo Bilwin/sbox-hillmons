@@ -1,21 +1,21 @@
 ﻿using Sandbox;
 
-[Library( "sandbox", Title = "Sandbox" )]
-partial class SandboxGame : Game
+[Library( "hillmons", Title = "Hillmons" )]
+partial class Hillmons : Game
 {
-	public SandboxGame()
+	public HillmonsKernel()
 	{
 		if ( IsServer )
 		{
 			// Create the HUD
-			_ = new SandboxHud();
+			_ = new HillmonsHud();
 		}
 	}
 
 	public override void ClientJoined( Client cl )
 	{
 		base.ClientJoined( cl );
-		var player = new SandboxPlayer();
+		var player = new HillmonsPlayer();
 		player.Respawn();
 
 		cl.Pawn = player;
@@ -85,8 +85,6 @@ partial class SandboxGame : Game
 
 		ent.Position = tr.EndPos;
 		ent.Rotation = Rotation.From( new Angles( 0, owner.EyeRot.Angles().yaw, 0 ) );
-
-		//Log.Info( $"ent: {ent}" );
 	}
 
 	public override void DoPlayerNoclip( Client player )

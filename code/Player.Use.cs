@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-partial class SandboxPlayer
+partial class HillmonsPlayer
 {
 	public bool IsUseDisabled()
 	{
