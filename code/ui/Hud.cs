@@ -1,4 +1,5 @@
-﻿using Sandbox.UI;
+﻿using Sandbox;
+using Sandbox.UI;
 
 namespace Hillmons
 {
@@ -8,9 +9,8 @@ namespace Hillmons
 		{
 			if ( IsClient )
 			{
-				RootPanel.SetTemplate( "/Hud.html" );
+				RootPanel.SetTemplate( "ui/Hud.html" );
 			}
 		}
 	}
-
 }
