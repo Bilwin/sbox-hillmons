@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hillmons
 {
-	[Library("minimal")]
+	[Library("hillmons")]
 	public partial class Hillmons : Sandbox.Game
 	{
 		public HillmonsKernel()
