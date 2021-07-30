@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hillmons
 {
-	[Library("hillmons")]
+	[Library("hillmons", Title = "Hillmons")]
 	public partial class Hillmons : Sandbox.Game
 	{
 		public Hillmons()
