@@ -28,7 +28,7 @@ namespace Alium.Hillmons
 		{
 			base.ClientJoined( client );
 
-			var player = new MinimalPlayer();
+			var player = new HillmonsPlayer();
 			client.Pawn = player;
 
 			player.Respawn();
