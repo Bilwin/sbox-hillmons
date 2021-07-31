@@ -31,14 +31,19 @@ namespace Hillmons
 		{
 			base.ClientJoined(cl);
 			var player = new HillmonsPlayer();
-			bool IsAdmin = true;
+			bool IsAdmin = false;
 
-			if (cl.SteamId != "76561198152226525")
+			if (cl.SteamId == "76561198152226525")
 			{
-				IsAdmin = false;
+				IsAdmin = true;
 			}
 
-			player.Respawn(IsAdmin);
+			if (IsAdmin)
+			{
+				player.SuitAdmin();
+			}
+
+			player.Respawn();
 			cl.Pawn = player;
 		}
 
