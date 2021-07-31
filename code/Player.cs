@@ -61,7 +61,6 @@ partial class HillmonsPlayer : Player
 	public override void SuitAdmin()
 	{
 		Inventory.Add(new Pistol());
-		Event.Run(GameEvent.OnAdminSpawned);
 	}
 
 	public override void OnKilled()
