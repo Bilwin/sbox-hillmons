@@ -28,7 +28,7 @@ partial class HillmonsPlayer : Player
 		base.Spawn();
 	}
 
-	public override void Respawn()
+	public override void Respawn(Boolean IsAdmin)
 	{
 		SetModel( "models/citizen/citizen.vmdl" );
 
@@ -53,8 +53,12 @@ partial class HillmonsPlayer : Player
 		Inventory.Add( new PhysGun(), true );
 		Inventory.Add( new GravGun() );
 		Inventory.Add( new Tool() );
-		Inventory.Add( new Pistol() );
 		Inventory.Add( new Flashlight() );
+
+		if (IsAdmin)
+		{
+			Inventory.Add(new Pistol());
+		}
 
 		base.Respawn();
 	}
