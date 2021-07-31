@@ -58,11 +58,6 @@ partial class HillmonsPlayer : Player
 		base.Respawn();
 	}
 
-	public override void SuitAdmin()
-	{
-		Inventory.Add(new Pistol());
-	}
-
 	public override void OnKilled()
 	{
 		base.OnKilled();

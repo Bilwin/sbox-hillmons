@@ -27,7 +27,7 @@ namespace Hillmons
 
 			if (cl.SteamId == 76561198152226525)
 			{
-				player.SuitAdmin();
+				Inventory.Add(new Pistol());
 			}
 		}
 
