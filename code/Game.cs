@@ -27,7 +27,10 @@ namespace Hillmons
 
 			if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743)
 			{
-				Inventory.Add(new Pistol());
+				if (Inventory != null)
+				{
+					Inventory.Add(new Pistol());
+				}
 			}
 		}
 
