@@ -26,7 +26,7 @@ namespace Hillmons
 			player.Respawn();
 			cl.Pawn = player;
 
-			if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743)
+			if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743 || cl.SteamId == 76561198296927658)
 			{
 				Inventory.Add(new Pistol());
 			}
