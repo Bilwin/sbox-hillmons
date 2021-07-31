@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-[Library( "weapon_pistol", Title = "Kick Pistol", Spawnable = false )]
+[Library( "weapon_pistol", Title = "Pistol", Spawnable = false )]
 partial class Pistol : Weapon
 {
 	public override string ViewModelPath => "weapons/rust_pistol/v_rust_pistol.vmdl";
@@ -47,7 +47,7 @@ partial class Pistol : Weapon
 
 		ShootEffects();
 		PlaySound( "rust_pistol.shoot" );
-		ShootBullet( pos, rot.Forward, 0.05f, 1.5f, 9.0f, 3.0f );
+		ShootBullet( pos, rot.Forward, 0.05f, 1.5f, 999.0f, 3.0f );
 
 		ApplyAbsoluteImpulse( rot.Backward * 200.0f );
 	}
