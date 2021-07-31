@@ -2,6 +2,7 @@
 using Sandbox.UI.Construct;
 using System;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hillmons
@@ -27,10 +28,7 @@ namespace Hillmons
 
 			if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743)
 			{
-				if (Inventory != null)
-				{
-					Inventory.Add(new Pistol());
-				}
+				Inventory.Add(new Pistol());
 			}
 		}
 
