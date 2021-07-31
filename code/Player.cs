@@ -28,7 +28,7 @@ partial class HillmonsPlayer : Player
 		base.Spawn();
 	}
 
-	public override void Respawn(Boolean IsAdmin)
+	public override void Respawn(bool IsAdmin)
 	{
 		SetModel( "models/citizen/citizen.vmdl" );
 
