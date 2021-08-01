@@ -26,11 +26,11 @@ namespace Hillmons
 			player.Respawn();
 			cl.Pawn = player;
 
-			if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743 || cl.SteamId == 76561198296927658)
-			{
-				if (Inventory != null)
-					Inventory.Add(new Pistol());
-			}
+			//if (cl.SteamId == 76561198152226525 || cl.SteamId == 76561198799754743 || cl.SteamId == 76561198296927658)
+			//{
+			//	if (Inventory != null)
+			//		Inventory.Add(new Pistol());
+			//}
 		}
 
 		protected override void OnDestroy()
