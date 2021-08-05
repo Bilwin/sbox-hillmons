@@ -21,7 +21,8 @@ namespace Hillmons
 		public override void ClientJoined(Client cl)
 		{
 			base.ClientJoined(cl);
-			var player = new HillmonsPlayer();
+			HillmonsPlayer hillmonsPlayer = new HillmonsPlayer();
+			var player = hillmonsPlayer;
 
 			player.Respawn();
 			cl.Pawn = player;
