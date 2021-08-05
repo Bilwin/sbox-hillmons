@@ -92,7 +92,7 @@ InventoryBar
 InventoryIcon
 {
 	width: 80px;
-	height: 80px;
+	height: 30px;
 	background-color: rgba( #222, 0.3 );
 	margin: 0px 2px;
 	position: relative;
@@ -115,28 +115,12 @@ InventoryIcon
 		text-shadow: 1px 1px 5px black;
 	}
 
-	.slot-number
-	{
-		font-size: 25px;
-		color: black;
-		font-weight: 900;
-		opacity: 0.3;
-		position: absolute;
-		top: 1px;
-		right: 6px;
-	}
-
 	&.active
 	{
 		background-color: rgba( #0094ff, 0.5 );
 		transition: all 0.1s ease-out;
 		width: 100px;
 		height: 100px;
-
-		.slot-number
-		{
-			color: #275576;
-		}
 
 		.item-name
 		{
