@@ -4,22 +4,9 @@ Health {
 	font-weight: 700;
 	color: white;
 	position: absolute;
-	transform: rotate(-2deg);
 	left: 40px;
 	top: 90%;
-	text-shadow: 4px 4px 10px rgba(61, 198, 207, 0.30);
-}
-
-text.title { 
-	font-family: Roboto;
-	font-size: 30px;
-	font-weight: 700;
-	color: white;
-	position: absolute;
-	transform: rotate(2deg);
-	left: 40px;
-	top: 40px;
-	text-shadow: 4px 4px 10px rgba(61, 198, 207, 0.30);
+	text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.30);
 }
 
 CurrentTool
@@ -120,7 +107,7 @@ InventoryIcon
 		background-color: rgba( #0094ff, 0.5 );
 		transition: all 0.1s ease-out;
 		width: 100px;
-		height: 100px;
+		height: 30px;
 
 		.item-name
 		{
